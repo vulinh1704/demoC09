@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập vào thế kỉ :
+<input type="text" id="input">
+<button onclick="show()">Nhập</button>
+<br>
+<p id="result"></p>
+<script>
+    function show() {
+        let year = +document.getElementById("input").value;
+        let century = Math.floor(year / 100 + 1);
+        document.getElementById("result").innerHTML = century;
+    }
+</script>
+</body>
+</html>

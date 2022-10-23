@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập a:
+<input type="text" id="inputA">
+Nhập b:
+<input type="text" id="inputB">
+<button onclick="show()">Nhập</button>
+<p id="result"></p>
+<script>
+    function show() {
+        let a = +document.getElementById("inputA").value;
+        let b = +document.getElementById("inputB").value;
+        let sum = 0;
+        if (a > b) {
+            document.getElementById("result").innerHTML = "Nhập sai rồi !!";
+        } else {
+            for (let i = a; i <= b; i++) {
+                sum += i;
+            }
+            document.getElementById("result").innerHTML = "Tổng các số từ a -> b : " + sum;
+        }
+    }
+</script>
+</body>
+</html>

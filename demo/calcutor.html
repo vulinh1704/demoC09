@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập a:
+<input type="text" id="inputA">
+Nhập b:
+<input type="text" id="inputB">
+<button onclick="show()">Nhập</button>
+<p id="result"></p>
+<script>
+    function show() {
+        let a = document.getElementById("inputA").value;
+        let b = document.getElementById("inputB").value;
+        let aPow2 = a * a;
+        let aPowb = Math.pow(a, b);
+        document.getElementById("result").innerHTML = "a ^ 2 = " + aPow2 + " | a ^ b = " + aPowb;
+    }
+</script>
+</body>
+</html>
