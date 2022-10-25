@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        doC;
+        constructor(doC) {
+            this.doC = doC;
+        }
+        chuyenCsangF(){
+            let doF = (this.doC * 1.8) + 32;
+            return doF;
+        }
+        chuyenCsangKevin(){
+            let doK = this.doC + 273;
+            return doK;
+        }
+    }
+    let temperature = new Temperature(25);
+    console.log("Do F la : " + temperature.chuyenCsangF());
+    console.log("Do K la : " + temperature.chuyenCsangKevin());
+</script>
+</body>
+</html>
